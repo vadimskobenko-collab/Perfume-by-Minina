@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        /* Оформление карточки товара */
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        /* Левая часть: Флакон и ингредиенты */
+        .visual-part {
+            flex: 1;
+            /* Сюда позже добавим твою картинку */
+            background-color: #eaeaea; 
+            height: 120px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+        }
+        /* Правая часть: Текст и кнопка */
+        .text-part {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .text-part h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+        .text-part p {
+            margin: 0 0 10px 0;
+            color: #555;
+            font-size: 14px;
+        }
+        .buy-button {
+            background-color: #0088cc;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-card">
+        <!-- Левая часть для картинки -->
+        <div class="visual-part">
+            Место для фото<br>(флакон и ингредиенты)
+        </div>
+        
+        <!-- Правая часть для текста -->
+        <div class="text-part">
+            <h3>Аромадиффузор</h3>
+            <p>Очень приятный и свежий аромат для вашего дома.</p>
+            <p><b>1 500 ₽</b></p>
+            <button class="buy-button">В корзину</button>
+        </div>
+    </div>
+
+</body>
+</html>
